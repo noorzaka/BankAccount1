@@ -9,6 +9,10 @@ public class BankAccount {
         this.balance = initialBalance;
     }
   
+  public BankAccount(String accountNumber) {
+        this.accountNumber = accountNumber;
+        this.balance = 0.0; // No initial balance
+    }
 
 
     public void deposit(double amount) {
