@@ -46,7 +46,7 @@ public class BankAccount {
             double convertedAmount = convertCurrency(amount, this.currency, toAccount.getCurrency());
             toAccount.deposit(convertedAmount);
         }
-    private double convertCurrency(double amount, String fromCurrency, String toCurrency) {
+private double convertCurrency(double amount, String fromCurrency, String toCurrency) {
         
         double conversionRate = 1.0;
         if (fromCurrency.equals("USD") && toCurrency.equals("EUR")) {
@@ -65,7 +65,6 @@ public class BankAccount {
             conversionRate = 0.005; // Example conversion rate for Comorian Franc
         }
         return amount * conversionRate;
-    }
     }
 
 
